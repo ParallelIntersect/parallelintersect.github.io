@@ -1,0 +1,35 @@
+---
+// interface Props{
+//     title: string;
+// }
+
+// const {title} = Astro.props;
+// document.getElementById('show-nav')
+---
+
+<header class="fixed bg-gray-300 w-full top-0 font-bold">
+    <div class="text-2xl px-2 absolute top-2 m-auto left-2">
+        <div class="w-10 inline-block">
+            <img src="logo.svg" alt="PI">
+        </div>
+        <h1 class="inline-block p-1 align-top">Parallel Intersect</h1>
+    </div>
+    <nav class="p-4 flex flex-row items-center justify-end sm:visible invisible">
+        <div class="px-2">
+            <a href="/blog">Blog</a>
+        </div>
+        <div class="px-2">
+            <a href="/game">Games</a>
+        </div>
+        <div class="px-2">
+            <a href="/market">Market Place</a>
+        </div>
+        <div class="px-2">
+            <a href="/project">Projects</a>
+        </div>
+        <!-- <div class="px-2">
+            <a href="/project">Join Community</a>
+        </div> -->
+    </nav>
+    <button class="absolute right-2 top-2 sm:invisible visible" type="button" id="show-nav">=</button>
+</header>
