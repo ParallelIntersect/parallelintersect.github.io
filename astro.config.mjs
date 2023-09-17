@@ -4,8 +4,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://parallelintersect.github.io"
+  site: "https://parallelintersect.github.io",
   //   base: "/parallelintersect.github.io",
-  ,
-  integrations: [tailwind()]
+  integrations: [tailwind()],
 });
