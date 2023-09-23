@@ -5,6 +5,7 @@
 
 // const {title} = Astro.props;
 // document.getElementById('show-nav')
+
 ---
 
 <header class="fixed bg-gray-300 w-full top-0 font-bold">
@@ -15,22 +16,27 @@
         </div>
         <h1 class="inline-block p-1 align-top">Parallel Intersect</h1>
     </a>
-    <nav class="p-4 flex flex-row items-center justify-end sm:visible invisible">
-        <div class="px-2">
-            <a href="/blog">Blog</a>
-        </div>
-        <div class="px-2">
-            <a href="/game">Games</a>
-        </div>
-        <div class="px-2">
+    <navbar class="flex flex-row justify-end p-4">
+    <nav class="flex flex-row items-center sm:visible invisible">
+
+            <div class="px-2">
+                <a href="/blog">Blog</a>
+            </div>
+            <div class="px-2">
+                <a href="/game">Games</a>
+            </div>
+            <div class="px-2">
             <a href="/market">Market Place</a>
         </div>
         <div class="px-2">
             <a href="/project">Projects</a>
         </div>
         <div class="px-2">
-            <a href="https://discord.gg/QvPTddkA6H">Join Community</a>
+            <a href="https://discord.gg/QvPTddkA6H" target="_blank">Join Community</a>
         </div>
     </nav>
-    <button class="absolute right-2 top-2 sm:invisible visible" type="button" id="show-nav">=</button>
+        <!-- <button class="rounded-lg p-2 bg-gray-500 m-px">Sign Up</button> -->
+        <button class="top-2 right-2 rounded-lg p-2 bg-gray-500 m-px absolute sm:static">Log In</button>
+</navbar>
+    <!-- <button class="absolute right-2 top-2 sm:invisible visible" type="button" id="show-nav">=</button> -->
 </header>
