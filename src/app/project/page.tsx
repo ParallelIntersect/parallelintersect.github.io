@@ -1,9 +1,10 @@
-import Layout from "@/app/layout";
+// import Layout from "@/app/layout";
 import Card from "@/components/Card";
 
 export default function Projects() {
   return (
-    <Layout>
+    // <Layout>
+    <>
       <h1 className="text-5xl text-center">Our Projects</h1>
 
       <Card
@@ -11,6 +12,7 @@ export default function Projects() {
         title="Mark Down Editor"
         body="Write better Documentation with our Mark Down Editor"
       />
-    </Layout>
+    </>
+    // </Layout>
   );
 }

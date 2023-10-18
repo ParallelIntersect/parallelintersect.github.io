@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Card from "/src/components/Card";
+import Card from "@/components/Card";
 export default function Home() {
   return (
     <main className="text-center mt-20">
@@ -32,7 +32,13 @@ export default function Home() {
       </ul>
 
       <div className="h-1/2 w-1/2 bg-cover absolute right-1/4 opacity-50 top-20 -z-10">
-        <img aria-hidden="true" src="logo.svg" />
+        <Image
+          aria-hidden="true"
+          src="logo.svg"
+          alt="PI"
+          width={1000}
+          height={1000}
+        />
       </div>
     </main>
   );

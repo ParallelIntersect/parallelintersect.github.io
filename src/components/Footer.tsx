@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <>
@@ -62,57 +64,71 @@ export default function Footer() {
               <div className="flex flex-row justify-evenly">
                 <div className="w-10">
                   <a href="https://www.facebook.com/parallelintersectpi">
-                    <img
+                    <Image
                       src="https://www.svgrepo.com/show/521654/facebook.svg"
                       alt="fb"
+                      width={100}
+                      height={100}
                     />
                   </a>
                 </div>
                 <div className="w-10">
                   <a href="https://www.instagram.com/parallelintersectpi/">
-                    <img
+                    <Image
                       src="https://www.svgrepo.com/show/521711/instagram.svg"
-                      alt=""
+                      alt="IG"
+                      width={100}
+                      height={100}
                     />
                   </a>
                 </div>
                 <div className="w-10">
                   <a href="https://www.instagram.com/parallelintersectpi/">
-                    <img
+                    <Image
                       src="https://www.svgrepo.com/show/521725/linkedin.svg"
-                      alt=""
+                      alt="IG"
+                      width={100}
+                      height={100}
                     />
                   </a>
                 </div>
                 <div className="w-10">
                   <a href="https://twitter.com/PIcompanyX">
-                    <img
+                    <Image
                       src="https://www.svgrepo.com/show/521900/twitter.svg"
-                      alt=""
+                      alt="X"
+                      width={100}
+                      height={100}
                     />
                   </a>
                 </div>
                 <div className="w-10">
                   <a href="https://www.youtube.com/@ParallelIntersectPI">
-                    <img
+                    <Image
                       src="https://www.svgrepo.com/show/521936/youtube.svg"
-                      alt=""
+                      alt="YT"
+                      width={100}
+                      height={100}
                     />
                   </a>
                 </div>
                 <div className="w-10">
                   <a href="https://github.com/ParallelIntersect/">
-                    <img
+                    <Image
                       src="https://www.svgrepo.com/show/521688/github.svg"
-                      alt=""
+                      alt="GIT"
+                      width={100}
+                      height={100}
                     />
                   </a>
                 </div>
                 <div className="w-10">
                   <a href="mailto:parallelintersectpi@gmail.com">
-                    <img
+                    <Image
                       src="https://www.svgrepo.com/show/521736/mail.svg"
-                      alt=""
+                      alt="Mail"
+                      width={100}
+                      height={100}
                     />
                   </a>
                 </div>
@@ -123,7 +139,14 @@ export default function Footer() {
         <hr className="h-px m-4 border-black w-full" />
         <main className=" flex justify-evenly items-center flex-col sm:flex-row">
           <div className="flex flex-row items-center m-2">
-            <img className="h-10 w-10" aria-hidden="true" src="/logo.svg" />
+            <Image
+              className="h-10 w-10"
+              aria-hidden="true"
+              src="logo.svg"
+              alt="PI"
+              width={100}
+              height={100}
+            />
             <div className="ml-2 font-bold text-2xl">Parallel Intersect</div>
           </div>
           <div className="text-center">
