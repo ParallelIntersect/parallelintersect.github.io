@@ -23,6 +23,11 @@ export default function Home() {
           title="Market Place"
           body="Buy Digital assets at affordable price."
         />
+        <Card
+          href="/blog"
+          title="Blog"
+          body="Stay informed about the latest developments in various fields."
+        />
         <Card href="/game" title="Games" body="Checkout Games created by us." />
         <Card
           href="https://discord.gg/QvPTddkA6H"
