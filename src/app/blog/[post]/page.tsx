@@ -69,7 +69,8 @@ export async function generateStaticParams(): Promise<string[]> {
 }
 
 
-export async function generateMetadata({ params }: { params: string }): Promise<{
+// export async function generateMetadata({ params }: { params: string }): Promise<{
+export async function generateMetadata({ params }: any): Promise<{
     title: string;
     description: string;
     category: string;
@@ -84,9 +85,9 @@ export async function generateMetadata({ params }: { params: string }): Promise<
     const metadata = getMetaData(params.post + ".md");
     console.log(params)
     console.log("Hello")
-    // if (!metadata) {
-    //     throw new Error('Metadata not found');
-    // }
+    if (!metadata) {
+        throw new Error('Metadata not found');
+    }
     return {
         title: metadata.title,
         description: metadata.description,
@@ -101,7 +102,8 @@ export async function generateMetadata({ params }: { params: string }): Promise<
     };
 }
 
-export default function BlogPostPage({ params }: { params: string }) {
+// export default function BlogPostPage({ params }: { params: string }) {
+export default function BlogPostPage({ params }: any) {
     const postHTML = getHTML(params.post + ".md");
     const metadata = getMetaData(params.post + ".md");
 
