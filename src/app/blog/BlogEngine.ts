@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import frontmatter from "frontmatter";
+import matter from "gray-matter";
 import Markdoc from "@markdoc/markdoc";
 
 export function getAllPostFile(): string[] {
@@ -28,7 +29,8 @@ export interface FrontmatterData {
 
 export function getMetaData(mFile: string): FrontmatterData {
   const MDcontent = readFile(mFile);
-  const frontmatter_data = frontmatter(MDcontent);
+  // const frontmatter_data = frontmatter(MDcontent);
+  const frontmatter_data = matter(MDcontent);
   return frontmatter_data.data as FrontmatterData;
 }
 

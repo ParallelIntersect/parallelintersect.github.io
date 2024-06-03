@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Home() {
     const postFiles = getAllPostFile();
-    var post_list_html = [];
+    var post_list_html: any = [];
     postFiles.forEach(postFile => {
         const d = getMetaData(postFile);
         post_list_html.push(

@@ -17,6 +17,7 @@
     "eslint": "8.51.0",
     "eslint-config-next": "13.5.5",
     "frontmatter": "^0.0.3",
+    "gray-matter": "^4.0.3",
     "html-react-parser": "^5.1.10",
     "next": "13.5.5",
     "postcss": "8.4.31",
