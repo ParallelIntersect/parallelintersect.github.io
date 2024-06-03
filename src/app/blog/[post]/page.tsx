@@ -57,6 +57,16 @@ import { getAllPostFile, getHTML, getMetaData } from "../BlogEngine";
 import parse from 'html-react-parser';
 import Image from "next/image";
 
+// export async function generateStaticParams(): Promise<string[]> {
+//     const posts = getAllPostFile();
+
+//     const mPosts: string[] = [];
+//     posts.forEach((post) => {
+//         mPosts.push(post.replace('.md', ''));
+//     });
+
+//     return mPosts.map((post) => { post: post.toString() });
+// }
 export async function generateStaticParams(): Promise<string[]> {
     const posts = getAllPostFile();
 
@@ -65,9 +75,8 @@ export async function generateStaticParams(): Promise<string[]> {
         mPosts.push(post.replace('.md', ''));
     });
 
-    return mPosts.map((post) => ({ post: post.toString() }));
+    return mPosts.map((post) => post.toString());
 }
-
 
 // export async function generateMetadata({ params }: { params: string }): Promise<{
 export async function generateMetadata({ params }: any): Promise<{
@@ -88,11 +97,16 @@ export async function generateMetadata({ params }: any): Promise<{
     if (!metadata) {
         throw new Error('Metadata not found');
     }
+
+
+
     return {
         title: metadata.title,
         description: metadata.description,
         category: metadata.category,
-        keywords: metadata.tags.split(','),
+        keywords: metadata.tags
+        // .split(',')
+        ,
         alternates: {
             canonical: `https://my-website.com/${metadata.slug}`,
         },
@@ -107,9 +121,10 @@ export default function BlogPostPage({ params }: any) {
     const postHTML = getHTML(params.post + ".md");
     const metadata = getMetaData(params.post + ".md");
 
-    const tags = metadata.tags.split(',');
+    const tags: any = metadata.tags
+    // .split(',');
     const TagsHTML = tags.map((tag: any) => (
-        <p key={index} className="bg-sky-300 rounded-full py-1 px-2 w-fit inline-block m-1">
+        <p key={tag.index} className="bg-sky-300 rounded-full py-1 px-2 w-fit inline-block m-1">
             {tag}
         </p>
     )
