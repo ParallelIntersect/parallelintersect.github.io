@@ -1,11 +1,11 @@
 import fs from "fs";
 import path from "path";
-import frontmatter from "frontmatter";
 import matter from "gray-matter";
 import Markdoc from "@markdoc/markdoc";
 
 export function getAllPostFile(): string[] {
-  const folderPath = path.resolve("src/app/blog/posts");
+  // const folderPath = path.resolve("src/app/blog/posts");
+  const folderPath = path.join("src/app/blog/posts");
   const dirFiles = fs.readdirSync(folderPath);
   return dirFiles;
 }
@@ -22,7 +22,8 @@ export interface FrontmatterData {
   title: string;
   description: string;
   category: string;
-  tags: string[];
+  // tags: string[];
+  tags: string;
   thumbnail: string;
   slug: string;
 }

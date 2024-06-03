@@ -70,6 +70,7 @@ import Image from "next/image";
 export async function generateStaticParams(): Promise<string[]> {
     const posts = getAllPostFile();
 
+    // const mPosts = "";
     const mPosts: string[] = [];
     posts.forEach((post) => {
         mPosts.push(post.replace('.md', ''));
@@ -92,11 +93,11 @@ export async function generateMetadata({ params }: any): Promise<{
     };
 }> {
     const metadata = getMetaData(params.post + ".md");
-    console.log(params)
     console.log("Hello")
     if (!metadata) {
         throw new Error('Metadata not found');
     }
+    console.log(metadata.tags)
 
 
 
@@ -104,11 +105,10 @@ export async function generateMetadata({ params }: any): Promise<{
         title: metadata.title,
         description: metadata.description,
         category: metadata.category,
-        keywords: metadata.tags
-        // .split(',')
+        keywords: metadata.tags.split(", ")
         ,
         alternates: {
-            canonical: `https://my-website.com/${metadata.slug}`,
+            canonical: `https://parallelintersect.vercel.app/blog/${metadata.slug}`,
         },
         openGraph: {
             images: [metadata.thumbnail],
@@ -121,10 +121,9 @@ export default function BlogPostPage({ params }: any) {
     const postHTML = getHTML(params.post + ".md");
     const metadata = getMetaData(params.post + ".md");
 
-    const tags: any = metadata.tags
-    // .split(',');
-    const TagsHTML = tags.map((tag: any) => (
-        <p key={tag.index} className="bg-sky-300 rounded-full py-1 px-2 w-fit inline-block m-1">
+    const tags: any = metadata.tags.split(',');
+    const TagsHTML = tags.map((tag: any, index: any) => (
+        <p key={index} className="bg-sky-300 rounded-full py-1 px-2 w-fit inline-block m-1">
             {tag}
         </p>
     )
