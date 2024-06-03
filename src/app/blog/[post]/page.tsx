@@ -109,7 +109,7 @@ export default function BlogPostPage({ params }: any) {
 
     const tags = metadata.tags.split(',');
     const TagsHTML = tags.map((tag: any) => (
-        <p className="bg-sky-300 rounded-full py-1 px-2 w-fit inline-block m-1">
+        <p key={index} className="bg-sky-300 rounded-full py-1 px-2 w-fit inline-block m-1">
             {tag}
         </p>
     )
