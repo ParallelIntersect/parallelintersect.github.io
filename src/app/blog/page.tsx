@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { getAllPostFile, getMetaData } from "./BlogEngine";
 import Link from "next/link";
-
+// import NavBar from "@/components/NavBar";
 
 export default function Home() {
     const postFiles = getAllPostFile();
@@ -15,6 +15,9 @@ export default function Home() {
 
     return (
         <div className="p-1">
+            {/* <NavBar title="" /> */}
+
+            <h1 className="text-4xl font-bold text-center">Blog</h1>
             <br />
             <div className="grid grid-cols-3 gap-1">{post_list_html}</div>
         </div>

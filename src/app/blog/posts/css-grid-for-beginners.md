@@ -1,15 +1,15 @@
 ---
-slug: risus-in-porta-lacus
-title: risus in porta lacus
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis porta neque, ac sollicitudin quam dignissim ut. Sed finibus interdum est, eget venenatis metus mollis a.
-thumbnail: https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
-tags: trees, earth, nature, environment
-category: Nature
+slug: css-grid-for-beginners
+title: CSS Grid for Beginners
+description: Grid Layout is widely used by many web designers to frame the structure of their web applications
+thumbnail: https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+tags: tutorial, css, frontend, development
+category: frontend
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis porta neque, ac sollicitudin quam dignissim ut. Sed finibus interdum est, eget venenatis metus mollis a. Quisque rutrum gravida nibh, eu maximus nisl pharetra ut. Ut pretium, quam sed scelerisque accumsan, nisl lacus sollicitudin libero, at scelerisque dolor orci id risus. Nunc id dolor aliquet, congue risus in, porta lacus. Nullam rhoncus posuere mollis. Suspendisse neque nunc, ultricies id gravida id, fermentum vitae erat. Morbi ac diam mauris. Aenean fermentum vestibulum sem vitae dignissim. Pellentesque vitae mauris id erat bibendum interdum a vitae tellus. Phasellus dictum orci sapien, vitae commodo nunc mattis a. Nullam euismod tellus non porta varius. Sed id pretium sapien, a euismod mauris. Praesent ut ex id urna laoreet hendrerit. Vestibulum nec molestie lectus, in ullamcorper velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 
-# Duis et ultricies ante
+## Duis et ultricies ante
 
 Vivamus consequat neque in neque vulputate tempor. Maecenas scelerisque, mi eu rutrum tempus, justo nulla bibendum leo, in vehicula quam eros vitae nisi. Duis et ultricies ante, non vulputate erat. Donec suscipit mi mi, eu rhoncus ex rutrum in. Mauris sed porttitor nibh, a auctor arcu. Morbi lectus velit, suscipit tincidunt erat facilisis, accumsan luctus nulla. Nulla sit amet congue nulla. In accumsan tristique porta. Donec nunc libero, lacinia nec feugiat eu, ornare eu nisi. Maecenas luctus vestibulum dui quis sagittis. Nulla ac commodo arcu. Proin placerat risus sit amet facilisis cursus.
 

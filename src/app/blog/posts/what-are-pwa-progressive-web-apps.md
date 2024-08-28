@@ -1,10 +1,10 @@
 ---
-slug: risus-in-porta-lacus
-title: risus in porta lacus
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis porta neque, ac sollicitudin quam dignissim ut. Sed finibus interdum est, eget venenatis metus mollis a.
-thumbnail: https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
-tags: trees, earth, nature, environment
-category: Nature
+slug: what-are-pwa-progressive-web-apps
+title: What are PWAs - A look into Progressive Web Apps
+description: Let's explore the world of development with this article. How to make more efficient applications which are also cross platform
+thumbnail: https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+tags: Mobile, Web, PWA, Cross-platform
+category: Development
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis porta neque, ac sollicitudin quam dignissim ut. Sed finibus interdum est, eget venenatis metus mollis a. Quisque rutrum gravida nibh, eu maximus nisl pharetra ut. Ut pretium, quam sed scelerisque accumsan, nisl lacus sollicitudin libero, at scelerisque dolor orci id risus. Nunc id dolor aliquet, congue risus in, porta lacus. Nullam rhoncus posuere mollis. Suspendisse neque nunc, ultricies id gravida id, fermentum vitae erat. Morbi ac diam mauris. Aenean fermentum vestibulum sem vitae dignissim. Pellentesque vitae mauris id erat bibendum interdum a vitae tellus. Phasellus dictum orci sapien, vitae commodo nunc mattis a. Nullam euismod tellus non porta varius. Sed id pretium sapien, a euismod mauris. Praesent ut ex id urna laoreet hendrerit. Vestibulum nec molestie lectus, in ullamcorper velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
@@ -12,6 +12,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis porta neque,
 # Duis et ultricies ante
 
 Vivamus consequat neque in neque vulputate tempor. Maecenas scelerisque, mi eu rutrum tempus, justo nulla bibendum leo, in vehicula quam eros vitae nisi. Duis et ultricies ante, non vulputate erat. Donec suscipit mi mi, eu rhoncus ex rutrum in. Mauris sed porttitor nibh, a auctor arcu. Morbi lectus velit, suscipit tincidunt erat facilisis, accumsan luctus nulla. Nulla sit amet congue nulla. In accumsan tristique porta. Donec nunc libero, lacinia nec feugiat eu, ornare eu nisi. Maecenas luctus vestibulum dui quis sagittis. Nulla ac commodo arcu. Proin placerat risus sit amet facilisis cursus.
+![](https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1)
 
 # Etiam quis ante sem
 

@@ -55,6 +55,7 @@
 
 import { getAllPostFile, getHTML, getMetaData } from "../BlogEngine";
 import parse from 'html-react-parser';
+import Markdoc from "@markdoc/markdoc";
 import Image from "next/image";
 
 // export async function generateStaticParams(): Promise<string[]> {
@@ -79,6 +80,46 @@ export async function generateStaticParams(): Promise<string[]> {
     return mPosts.map((post) => post.toString());
 }
 
+
+// export default function BlogPostPage({ params }: { params: string }) {
+export default function BlogPostPage({ params }: any) {
+    const postHTML = getHTML(params.post + ".md");
+    const metadata = getMetaData(params.post + ".md");
+
+    const tags: any = metadata.tags.split(',');
+    // const tags: any = metadata.tags
+    const TagsHTML = tags.map((tag: any, index: any) => (
+        <p key={index} className="bg-sky-300 rounded-full py-1 px-2 w-fit inline-block m-1">
+            {tag}
+        </p>
+    )
+    );
+    return (
+        <div className="max-w-4xl mx-auto p-2 ">
+            <h1 className="text-3xl font-bold">{metadata.title}</h1>
+            <p className="bg-emerald-300 rounded-full py-1 px-2 w-fit inline-block m-1 text-sm">
+                {metadata.category}
+            </p>
+            <div className="aspect-video relative max-h-80 mx-auto">
+                <Image
+                    className="rounded-lg"
+                    src={metadata.thumbnail}
+                    fill={true}
+                    alt={metadata.title}
+                />
+            </div>
+            <br />
+
+            <article className="prose prose-base max-w-4xl mx-auto prose-h1:text-lg prose-p:text-base">
+
+                {parse(postHTML)}
+                {/* {Markdoc.renderers(postHTML)} */}
+            </article>
+            <div className="w-fit text-sm">{TagsHTML}</div>
+
+        </div>
+    );
+}
 // export async function generateMetadata({ params }: { params: string }): Promise<{
 export async function generateMetadata({ params }: any): Promise<{
     title: string;
@@ -105,7 +146,8 @@ export async function generateMetadata({ params }: any): Promise<{
         title: metadata.title,
         description: metadata.description,
         category: metadata.category,
-        keywords: metadata.tags.split(", ")
+        // keywords: metadata.tags.split(", ")
+        keywords: metadata.tags.split(",")
         ,
         alternates: {
             canonical: `https://parallelintersect.vercel.app/blog/${metadata.slug}`,
@@ -114,42 +156,4 @@ export async function generateMetadata({ params }: any): Promise<{
             images: [metadata.thumbnail],
         },
     };
-}
-
-// export default function BlogPostPage({ params }: { params: string }) {
-export default function BlogPostPage({ params }: any) {
-    const postHTML = getHTML(params.post + ".md");
-    const metadata = getMetaData(params.post + ".md");
-
-    const tags: any = metadata.tags.split(',');
-    const TagsHTML = tags.map((tag: any, index: any) => (
-        <p key={index} className="bg-sky-300 rounded-full py-1 px-2 w-fit inline-block m-1">
-            {tag}
-        </p>
-    )
-    );
-
-    return (
-        <div className="max-w-4xl mx-auto p-2">
-            <h1 className="text-xl font-bold">{metadata.title}</h1>
-            <p className="bg-emerald-300 rounded-full py-1 px-2 w-fit inline-block m-1 text-sm">
-                {metadata.category}
-            </p>
-            <div className="aspect-video relative max-h-80 mx-auto">
-                <Image
-                    className="rounded-lg"
-                    src={metadata.thumbnail}
-                    fill={true}
-                    alt={metadata.title}
-                />
-            </div>
-            <br />
-
-            <article className="prose prose-base max-w-4xl mx-auto prose-h1:text-lg prose-p:text-base">
-                {parse(postHTML)}
-            </article>
-            <div className="w-fit text-sm">{TagsHTML}</div>
-
-        </div>
-    );
 }

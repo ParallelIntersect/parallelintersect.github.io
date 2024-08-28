@@ -1,8 +1,8 @@
 ---
-slug: risus-in-porta-lacus
-title: risus in porta lacus
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis porta neque, ac sollicitudin quam dignissim ut. Sed finibus interdum est, eget venenatis metus mollis a.
-thumbnail: https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+slug: build-mern-app-tutorial
+title: Build a MERN App - MongoDB, Express.js, React, Node.js
+description: Take a walkthrough on building a simple CRUD(CREATE, READ, UPDATE, DELETE) application using the MERN(Mongo, Express.js, React, Node.js) stack
+thumbnail: https://images.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 tags: trees, earth, nature, environment
 category: Nature
 ---
