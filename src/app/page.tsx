@@ -35,7 +35,7 @@ export default function Home() {
           body="Come say hi to our amazing Discord community. ❤️"
         />
       </ul>
-
+      {/* 
       <div className="h-1/2 w-1/2 bg-cover absolute right-1/4 opacity-50 top-20 -z-10">
         <Image
           aria-hidden="true"
@@ -44,7 +44,7 @@ export default function Home() {
           width={1000}
           height={1000}
         />
-      </div>
+      </div> */}
     </main>
   );
 }

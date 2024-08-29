@@ -15,9 +15,15 @@ export default function Home() {
 
     return (
         <div className="p-1">
-            <NavBar title="Blog" />
+            <NavBar title="Learn" />
 
-            <h1 className="text-4xl font-bold text-center">Blog</h1>
+            <h1 className="text-4xl font-bold text-center">Learn</h1>
+            <div className="text-center bg-slate-600 p-20">
+
+                <p>Educate yourself on different topics for FREE.</p>
+                <button className="bg-black text-blue-50 rounded-lg p-2">Browse Our Courses</button>
+            </div>
+
             <br />
             <div className="sm:grid grid-cols-2 gap-4 md:grid-cols-3 flex flex-col">{post_list_html}</div>
         </div>

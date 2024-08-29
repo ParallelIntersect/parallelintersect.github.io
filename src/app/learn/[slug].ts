@@ -1,6 +1,7 @@
-// ---
 // import Layout from '../../layouts/Layout.astro'
 // import {Image} from 'astro:assets';
+// import Header from '../../components/Header.astro'
+// import Footer from '../../components/Footer.astro'
 // import {getCollection} from 'astro:content';
 // import type {CollectionEntry} from 'astro:content';
 
@@ -22,9 +23,8 @@
 // const {post}= Astro.props;
 // const {Content} = await post.render()
 
-// ---
-
 // <Layout title={post.data.title}>
+//     <Header/>
 
 //     <h1 className='text-5xl m-5 font-bold'>{post.data.title}</h1>
 //     <Image src={post.data.image} alt={post.data.title} format="webp" width={600} height={600/2} className='rounded' />
