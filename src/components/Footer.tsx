@@ -6,17 +6,35 @@ export default function Footer() {
       <footer className="bottom-0 p-10 bg-gray-700 w-full">
         <nav className="justify-evenly flex flex-col sm:flex-row">
           <section className="flex-col mb-4">
-            <div className="text-2xl font-semibold">Games</div>
+            <a href="/game">
+              <div className="text-2xl font-semibold">Games</div>
+            </a>
             <ul>
-              <li>Backrooms</li>
-              <li>EduAlpha</li>
-              <li>Shallow2D</li>
-              <li>Chainsaw</li>
-              <li>Ballin</li>
+              <a href="/game/backrooms">
+
+                <li>Backrooms</li>
+              </a>
+              <a href="/game/edualpha">
+                <li>EduAlpha</li>
+              </a>
+              <a href="/game/shallow2d">
+                <li>Shallow2D</li>
+              </a>
+              <a href="/game/chainsaw">
+                <li>Chainsaw</li>
+              </a>
+              <a href="/game/ballin">
+                <li>Ballin</li>
+              </a>
+              <a href="/game/runningcube">
+                <li>Running Cube</li>
+              </a>
             </ul>
           </section>
           <section className="flex-col mb-4">
-            <div className="text-2xl font-semibold">Blog</div>
+            <a href="/blog">
+              <div className="text-2xl font-semibold">Blog</div>
+            </a>
             <ul>
               <li>Build MERN App</li>
               <li>Progressive Web App</li>
@@ -28,7 +46,10 @@ export default function Footer() {
             </ul>
           </section>
           <section className="flex-col mb-4">
-            <div className="text-2xl font-semibold">Market Place</div>
+            <a href="store">
+
+              <div className="text-2xl font-semibold">Market Place</div>
+            </a>
             <ul>
               <li>3D Assets</li>
               <li>Plugins</li>
@@ -38,7 +59,9 @@ export default function Footer() {
             </ul>
           </section>
           <section className="mb-4">
-            <div className="text-2xl font-semibold">Learn</div>
+            <a href="/learn">
+              <div className="text-2xl font-semibold">Learn</div>
+            </a>
             <ul>
               <li>Data Structure & Algorithms</li>
               <li>Machine Learning</li>
@@ -48,11 +71,20 @@ export default function Footer() {
             </ul>
           </section>
           <section className="mb-4">
-            <div className="text-2xl font-semibold">Projects</div>
+            <a href="/project">
+
+              <div className="text-2xl font-semibold">Projects</div>
+            </a>
             <ul>
-              <li>Iconology</li>
-              <li>WeWidgets</li>
-              <li>ProductivePro</li>
+              <a href="/iconology">
+                <li>Iconology</li>
+              </a>
+              <a href="/wewidgets">
+                <li>WeWidgets</li>
+              </a>
+              <a href="/productivepro">
+                <li>ProductivePro</li>
+              </a>
               <li></li>
               <li></li>
             </ul>
@@ -138,19 +170,21 @@ export default function Footer() {
         </nav>
         <hr className="h-px m-4 border-black w-full" />
         <main className=" flex justify-evenly items-center flex-col sm:flex-row">
-          <div className="flex flex-row items-center m-2">
-            <Image
-              className="h-10 w-10"
-              aria-hidden="true"
-              src="logo.svg"
-              alt="PI"
-              width={100}
-              height={100}
-            />
-            <div className="ml-2 font-bold text-2xl">Parallel Intersect</div>
-          </div>
+          <a href="/">
+            <div className="flex flex-row items-center m-2">
+              <Image
+                className="h-10 w-10"
+                aria-hidden="true"
+                src="/logo.svg"
+                alt="PI"
+                width={100}
+                height={100}
+              />
+              <div className="ml-2 font-bold text-2xl">Parallel Intersect</div>
+            </div>
+          </a>
           <div className="text-center">
-            Copyright © 2021-2023 Parallel Intersect, All rights reserved
+            Copyright © 2021-2024 Parallel Intersect, All rights reserved
           </div>
         </main>
       </footer>

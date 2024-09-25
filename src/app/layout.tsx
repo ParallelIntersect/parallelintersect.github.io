@@ -20,10 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* <NavBar title="" /> */}
-      <body className={inter.className}>
-        {children}
+      <body className={`${inter.className} flex flex-col h-screen`}>
+        <main className="flex-grow">
 
-        <div className="h-1/2 w-1/2 bg-cover absolute right-1/4 opacity-50 top-20 -z-10">
+          {children}
+        </main>
+
+        {/* <div className="h-1/2 w-1/2 bg-cover absolute right-1/4 opacity-50 top-20 -z-10">
           <Image
             aria-hidden="true"
             src="logo.svg"
@@ -31,7 +34,7 @@ export default function RootLayout({
             width={1000}
             height={1000}
           />
-        </div>
+        </div> */}
         <Footer />
       </body>
     </html>
